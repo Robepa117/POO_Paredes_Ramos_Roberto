@@ -43,9 +43,10 @@ public static void main(String[] args){
     
     
     //variables
-    int Edad, opcion, Socio;
+    int Edad, opcion, Socio, numbinario;
     double Precio, Bono;
     char Letras;
+    Sting binario = "";
     
     
     //cuerpo del programa
@@ -121,6 +122,35 @@ public static void main(String[] args){
             break;
 
             case 2:
+
+                System.out.println("Ingrese un numero positivo entero que desee convertir a binario");
+                numbinario = entrada.nextInt();
+                /*
+                Tengo que comprobar que sea positivo
+                condiciones donde numbiario > 0
+                sino no se puede convertir
+                */
+
+                if(numbinario > 0){
+                    /*
+                    Como el algoritmo para convertir un numero decimal en binario
+                    aplica al numbinario mod 2
+                    */
+                    while(numbinario > 0){
+                        if(numbianrio % 2 == 0){
+                            binario = "0" + binario;
+                        }else{
+                            binario = "1" + binario;
+                        }
+                        numbinario = (int)numbinario / 2;
+                    }
+                }else if (numbinario == 0){
+                    binario = "0";
+                }else{
+                    binario = "No se pudo convertir el numero. ingrese solo positivos";
+                }
+                System.out.println("El numero convertido a binario es: " + binario);
+                break;
 
 
             case 3:
