@@ -46,7 +46,7 @@ public static void main(String[] args){
     int Edad, opcion, Socio, numbinario;
     double Precio, Bono;
     char Letras;
-    Sting binario = "";
+    String binario = "";
     
     
     //cuerpo del programa
@@ -137,7 +137,7 @@ public static void main(String[] args){
                     aplica al numbinario mod 2
                     */
                     while(numbinario > 0){
-                        if(numbianrio % 2 == 0){
+                        if(numbinario % 2 == 0){
                             binario = "0" + binario;
                         }else{
                             binario = "1" + binario;
