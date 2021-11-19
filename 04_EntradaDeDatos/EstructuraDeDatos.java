@@ -178,8 +178,8 @@ public static void main(String[] args){
                     switch(op){
                         case 1:
                             System.out.println("Ingrese la temperatura en grados Celcius: ");
-                            t=entrada.nextFloat();
-                            r=t*(9.0/5.0)+32;
+                            t = entrada.nextFloat();
+                            r = t * (9.0 / 5.0) + 32;
                             System.out.println(t+"Celcius son igual a "+r+" Farenheit ");
                             System.out.println("¿Desea realizar otra conversion? Presione 7 para salir o 1 para continuar");
                             op = entrada.nextInt();
@@ -189,7 +189,7 @@ public static void main(String[] args){
                         case 2:
                             System.out.println("Ingrese la temperatura en grados Farenheit");
                             t = entrada.nextFloat();
-                            r = (t-32)*(5.0/9.0);
+                            r = (t - 32) * (5.0 / 9.0);
                             System.out.println("t+ Farenheit son igual a "+r+" Celcius");
                             System.out.println("¿Desea realizar otra conversion? Presione 7 para salir o 1 para continuar");
                             op = entrada.nextInt();
@@ -209,7 +209,7 @@ public static void main(String[] args){
                         case 4:
                             System.out.println("Ingrese la temperatura en grados kelvin");
                             t = entrada.nextFloat();
-                            r = t -273.15;
+                            r = t - 273.15;
                             System.out.println(t+ "Kelvin son igual a "+r+" Celcius");
                             System.out.println("¿Desea realizar otra conversion? Presione 7 para salir o 1 para continuar");
                             op = nextInt();
